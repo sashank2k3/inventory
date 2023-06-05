@@ -1,0 +1,100 @@
+<!-- bill.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bill</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            margin-bottom: 20px;
+            text-align: center;
+            color: #333;
+        }
+        .bill-details {
+            margin-bottom: 20px;
+        }
+        .bill-details strong {
+            font-weight: bold;
+        }
+        .bill-items {
+            margin-bottom: 40px;
+        }
+        .bill-items table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .bill-items th,
+        .bill-items td {
+            padding: 8px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+        .bill-total {
+            text-align: right;
+            font-weight: bold;
+        }
+        .btn-primary {
+            display: block;
+            width: 100%;
+            background-color: #007bff;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #0069d9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Bill</h2>
+        <div class="bill-details">
+            <p><strong>Customer Name:</strong> John Doe</p>
+            <p><strong>Bill Date:</strong> January 1, 2022</p>
+            <p><strong>Bill Number:</strong> #123456</p>
+        </div>
+        <div class="bill-items">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Item 1</td>
+                        <td>2</td>
+                        <td>$10.00</td>
+                        <td>$20.00</td>
+                    </tr>
+                    <tr>
+                        <td>Item 2</td>
+                        <td>1</td>
+                        <td>$15.00</td>
+                        <td>$15.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="bill-total">
+            <p><strong>Total Amount:</strong> $35.00</p>
+        </div>
+        <button type="button" class="btn btn-primary">Print</button>
+    </div>
+</body>
+</html>

@@ -1,13 +1,11 @@
+<!-- update_profile.html -->
+
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Inventory Management System</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Update Profile</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -35,12 +33,19 @@
 			</ul>
 		</div>
 	</nav>
-	<div class="container mt-3">
-		<h2>Inventory Management System</h2>
-		<p>Welcome to the Inventory Management System.</p>
-		<p>You can use the links above to manage your inventory, sales, and generate reports.</p>
-		<a class="nav-link" href="login.html">Login Now</a>
-		<a class="nav-link" href="register.html">Register Now</a>
-	</div>
+    <div class="container">
+        <h2>Update Profile</h2>
+        <form method="post">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" class="form-control" id="username" name="username" value="{{ user.username }}" readonly>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" value="{{ user.email }}">
+            </div>
+            <button type="submit" class="btn btn-primary">Save Changes</button>
+        </form>
+    </div>
 </body>
 </html>
